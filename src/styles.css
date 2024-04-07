@@ -1,2 +1,67 @@
+:root {
+  --slate-gray: hsla(194, 15%, 51%, 1);
+  --silver: hsla(204, 3%, 68%, 1);
+  --dark-moss-green: hsla(80, 40%, 21%, 1);
+  --timberwolf: hsla(37, 16%, 85%, 1);
+  --licorice: hsla(9, 11%, 12%, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: calc(100vh - 0rem);
+  width: calc(100vw - 0rem);
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+}
+
+header{
+  display: grid;
+  grid-row: 1 / 2;
+  background-color: var(--dark-moss-green);
+  color: var(--timberwolf);
+  align-content: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+nav img {
+  grid-row: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  max-width: 35%;
+  max-height: auto;
+  margin-bottom: 2rem;
+}
+
+.button-wrapper {
+  display: grid;
+  grid-row: 1 / -1;
+  grid-auto-flow: column;
+  gap: 5rem;
+  margin-right: 2rem;
+}
+
 button {
+  background-color: var(--dark-moss-green);
+  color: var(--timberwolf);
+  border: none;
+  font-size: 2rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+#content {
+  grid-row: 2 / 3;
+  background-image: url('content-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--licorice);
 }

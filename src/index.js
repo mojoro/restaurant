@@ -1,3 +1,6 @@
 import './styles.css';
+import Logo from './logo-transparent-horizontal.png';
 
-console.log("Hello, John!");
+document.querySelector('img').src = Logo;
+
+console.log("Hello, John!")
