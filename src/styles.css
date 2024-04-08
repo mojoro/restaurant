@@ -23,10 +23,10 @@
 }
 
 body {
-  height: calc(100vh - 0rem);
-  width: calc(100vw - 0rem);
+  min-height: 100vh;
+  width: auto;
   display: grid;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 7rem 1fr;
 }
 
 header{
@@ -35,6 +35,9 @@ header{
   background-color: var(--dark-moss-green);
   color: var(--timberwolf);
   align-content: center;
+  position: fixed;
+  width: 100%;
+  height: 7rem;
 }
 
 nav {
@@ -83,7 +86,7 @@ button:hover {
   justify-content: center;
   align-content: center;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: .5fr 5fr .5fr;
+  grid-template-rows: 4rem 1fr 4rem;
 }
 
 .content {
@@ -91,17 +94,16 @@ button:hover {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   border-radius: 1rem;
-  display: grid;
-  grid-template-rows: 2fr 2fr 1fr;
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: center;
-  align-content: center;
-  grid-auto-flow: column;
+  display: flex; /* Change this line */
+  flex-direction: column; /* Add this line */
+  justify-content: flex-start; /* Change this line */
+  align-items: center; /* Add this line */
+  overflow: auto; /* Add this line */
+  padding: 1rem; /* Add this line */
 }
 
 .card {
   background-color: var(--light-moss-green);
-  grid-column: 2 / 3;
   margin: 2rem 0;
   border-radius: 2rem;
   display: flex;
@@ -112,6 +114,10 @@ button:hover {
   color: var(--timberwolf);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2rem;
+  width: 100%; /* Add this line */
+  min-width: 500px;
+  min-height: 200px;
+  max-width: 800px; /* Add this line */
 }
 
 .card h2{
