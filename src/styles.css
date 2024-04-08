@@ -36,6 +36,7 @@ header{
   color: var(--timberwolf);
   align-content: center;
   position: fixed;
+  z-index: 1000;
   width: 100%;
   height: 7rem;
 }
@@ -81,6 +82,7 @@ button:hover {
   background-image: url('content-background.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: var(--licorice);
   display: grid;
   justify-content: center;
@@ -115,8 +117,6 @@ button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2rem;
   width: 100%; /* Add this line */
-  min-width: 500px;
-  min-height: 200px;
   max-width: 800px; /* Add this line */
 }
 
@@ -146,4 +146,25 @@ button:hover {
 
 .location {
   gap: .5rem;
+}
+
+.divider {
+  border-radius: 0;
+  width: 80%;
+  margin: 4rem 0 -1rem 0;
+  font-family: 'allisonregular';
+  font-size: 2rem;
+  padding: 10px;
+  position: relative; /* Add this line */
+  clip-path: polygon(0 0, 100% 0, 75% 50%, 100% 100%, 0 100%, 25% 50%); /* Add this line */
+}
+
+.item {
+  width: 50%;
+  padding: 20px;
+  margin-bottom: -.5rem;
+}
+
+.item:last-of-type {
+  margin-bottom: 3rem;
 }
