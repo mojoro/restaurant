@@ -7,7 +7,7 @@ export function addListeners() {
   const home = document.getElementById('home');
   const menu = document.getElementById('menu');
   const contact = document.getElementById('contact');
-
+  
   function printHome() {
     clearContent();
     main.appendChild(homeContent());
@@ -20,11 +20,12 @@ export function addListeners() {
     clearContent();
     main.appendChild(contactContent());
   }
-
+  
   function clearContent() {
     main.innerHTML = '';
   }
-
+  
+  document.querySelector('img').addEventListener('click', printHome);
   home.addEventListener('click', printHome);
   menu.addEventListener('click', printMenu);
   contact.addEventListener('click', printContact);

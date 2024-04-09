@@ -55,6 +55,10 @@ nav img {
   margin-bottom: 1rem;
 }
 
+nav img:hover {
+  cursor: pointer;
+}
+
 .button-wrapper {
   display: grid;
   grid-row: 1 / -1;
