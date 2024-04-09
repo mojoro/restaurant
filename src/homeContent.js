@@ -14,7 +14,7 @@ export function homeContent() {
 }
 function reviewComponent() {
   const review = document.createElement('div');
-  review.classList.add('card', 'review');
+  review.classList.add('card', 'review', 'home');
 
   const header = document.createElement('h2');
   header.textContent = 'Review';
@@ -33,7 +33,7 @@ function reviewComponent() {
 }
 function hoursComponent() {
   const hours = document.createElement('div');
-  hours.classList.add('card', 'hours');
+  hours.classList.add('card', 'hours', 'home');
 
   const header = document.createElement('h2');
   header.textContent = 'Hours';
@@ -72,7 +72,7 @@ function hoursComponent() {
 }
 function locationComponent() {
   const location = document.createElement('div');
-  location.classList.add('card', 'location');
+  location.classList.add('card', 'location', 'home');
 
   const header = document.createElement('h2');
   header.textContent = 'Location';

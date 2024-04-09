@@ -127,6 +127,10 @@ button:hover {
   margin-left: 2rem;
 }
 
+.home {
+  padding: 1rem 0 2rem 0;
+}
+
 .review p {
   max-width: 75%;
   font-size: 1.3rem;
@@ -167,4 +171,26 @@ button:hover {
 
 .item:last-of-type {
   margin-bottom: 3rem;
+}
+.contact{
+  max-width: 400px;
+}
+.contact:nth-child(2) {
+  margin: 3rem 0 -1rem 0;
+}
+
+.contact h3 {
+  align-self: flex-start;
+  margin: 1rem 0rem -1rem 3rem;
+  font-size: 1.7rem;
+}
+
+.contact p {
+  margin: 1rem 0rem -1.5rem 4rem;
+  font-size: 1.3rem;
+  align-self: flex-start;
+}
+
+.contact p:last-child {
+  margin-bottom: 1.5rem;
 }
