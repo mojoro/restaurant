@@ -1,6 +1,6 @@
 export function homeContent() {
-  const content = document.createElement('div');
-  content.classList.add('content');
+  const content = document.createElement("div");
+  content.classList.add("content");
 
   const review = reviewComponent();
   const hours = hoursComponent();
@@ -13,17 +13,18 @@ export function homeContent() {
   return content;
 }
 function reviewComponent() {
-  const review = document.createElement('div');
-  review.classList.add('card', 'review', 'home');
+  const review = document.createElement("div");
+  review.classList.add("card", "review", "home");
 
-  const header = document.createElement('h2');
-  header.textContent = 'Review';
+  const header = document.createElement("h2");
+  header.textContent = "Review";
 
-  const quote = document.createElement('p');
-  quote.textContent = '"Chloe is the nicest restaurant owner I have ever met, and her husband is so handsome! Awesome matcha, delicious noodles - this is my favorite cafe in Berlin!"';
+  const quote = document.createElement("p");
+  quote.textContent =
+    '"Chloe is the nicest restaurant owner I have ever met, and her husband is so nice! Awesome matcha, delicious noodles - this is my favorite cafe in Berlin!"';
 
-  const credit = document.createElement('h4');
-  credit.textContent = 'Matthias Rossini';
+  const credit = document.createElement("h4");
+  credit.textContent = "Matthias Rossini";
 
   review.appendChild(header);
   review.appendChild(quote);
@@ -32,32 +33,32 @@ function reviewComponent() {
   return review;
 }
 function hoursComponent() {
-  const hours = document.createElement('div');
-  hours.classList.add('card', 'hours', 'home');
+  const hours = document.createElement("div");
+  hours.classList.add("card", "hours", "home");
 
-  const header = document.createElement('h2');
-  header.textContent = 'Hours';
+  const header = document.createElement("h2");
+  header.textContent = "Hours";
 
-  const monday = document.createElement('p');
-  monday.textContent = 'Monday: 10am - 8pm';
+  const monday = document.createElement("p");
+  monday.textContent = "Monday: 10am - 8pm";
 
-  const tuesday = document.createElement('p');
-  tuesday.textContent = 'Tuesday: 10am - 8pm';
+  const tuesday = document.createElement("p");
+  tuesday.textContent = "Tuesday: 10am - 8pm";
 
-  const wednesday = document.createElement('p');
-  wednesday.textContent = 'Wednesday: 10am - 8pm';
+  const wednesday = document.createElement("p");
+  wednesday.textContent = "Wednesday: 10am - 8pm";
 
-  const thursday = document.createElement('p');
-  thursday.textContent = 'Thursday: 10am - 8pm';
+  const thursday = document.createElement("p");
+  thursday.textContent = "Thursday: 10am - 8pm";
 
-  const friday = document.createElement('p');
-  friday.textContent = 'Friday: 10am - 8pm';
+  const friday = document.createElement("p");
+  friday.textContent = "Friday: 10am - 8pm";
 
-  const saturday = document.createElement('p');
-  saturday.textContent = 'Saturday: 10am - 8pm';
+  const saturday = document.createElement("p");
+  saturday.textContent = "Saturday: 10am - 8pm";
 
-  const sunday = document.createElement('p');
-  sunday.textContent = 'Sunday: 10am - 8pm';
+  const sunday = document.createElement("p");
+  sunday.textContent = "Sunday: 10am - 8pm";
 
   hours.appendChild(header);
   hours.appendChild(monday);
@@ -71,14 +72,14 @@ function hoursComponent() {
   return hours;
 }
 function locationComponent() {
-  const location = document.createElement('div');
-  location.classList.add('card', 'location', 'home');
+  const location = document.createElement("div");
+  location.classList.add("card", "location", "home");
 
-  const header = document.createElement('h2');
-  header.textContent = 'Location';
+  const header = document.createElement("h2");
+  header.textContent = "Location";
 
-  const address = document.createElement('p');
-  address.textContent = 'Hauptstrasse 50, Berlin, Germany';
+  const address = document.createElement("p");
+  address.textContent = "Hauptstrasse 50, Berlin, Germany";
 
   location.appendChild(header);
   location.appendChild(address);
